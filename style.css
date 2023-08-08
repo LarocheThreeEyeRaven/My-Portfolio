@@ -1,0 +1,549 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    background-color: black;
+}
+
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 30px 0;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav li a{
+    margin: 0px 30px;
+    color: white;
+    font-weight: 350;
+    letter-spacing: 1.5px;
+    transition: all ease 0.3s;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+}
+
+.socials a{
+    color: white;
+    margin-left: 10px;
+    transition: all ease 0.3s;
+}
+
+.socials a:first-child{
+    margin-left: 0px;
+}
+
+.nav li a:hover,
+.socials a:hover{
+    color: gray;
+}
+
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    min-width: 500px;
+    text-align: center;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+}
+
+.hero strong{
+     font-weight: 700;
+     font-size: 1.6rem;
+     color: white;
+    
+}
+
+.hero span{
+    font-size: 1rem;
+    color: gray;
+    font-weight: 400;
+}
+
+
+.hero h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    
+}
+
+.hero p{
+    color: gray;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+
+
+/* hero section end */
+
+
+/* about me */
+#about{
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    
+}
+
+
+#about strong{
+    color: gray;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    
+}
+
+#about h2{
+     font-weight: 800;
+     color: burlywood;
+     line-height: 4rem;
+     font-size: 4rem;
+     margin-top: 10px;
+    
+}
+
+.text h3{
+    color: black;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    
+}
+
+.text{
+    margin-top: 30px;
+    max-width: 80%;
+    margin-left: auto;
+    
+    
+}
+
+.text p{
+   color: black;
+   margin-bottom: 20px;
+   line-height: 2rem;
+   letter-spacing: 0.3px;
+   
+    
+}
+.text a{
+    width: 125px;
+    height: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #1a1a1a;
+    background-color: #8d94b43b;
+     font-size: 0.7rem;
+     font-weight: 500;
+}
+
+.text a i{
+    margin-left: 10px;
+    
+}
+
+
+/* about end */
+
+
+/* services */
+
+#service{
+     width: 100%;
+      margin: 50px auto 0px auto;
+      padding: 50px 0px;
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center ;
+}
+.s_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.s_heading strong{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.s_heading p{
+    color: grey;
+    font-size: 3rem;
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.container_box{
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.s_box img{
+     height: 75px;
+}
+
+
+.s_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+     border-radius: 10px;
+     width: 300px;
+     height: 400px;
+     padding: 20px 25px;
+     box-sizing: border-box;
+     margin: 30px;
+     position: relative;
+     
+    
+}
+
+.s_box h1{
+    color: #576975;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.s_box p{
+    color: rgba(87,105,117,0.9);
+    text-align: center;
+}
+
+.btn{
+    width: 140px;
+    height: 40px;
+    border: 1px solid rgba(74,144,226,0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.s_box:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.8);
+    transition: all ease 0.3s;
+}
+
+
+.btn:hover{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    color: white;
+    transition: all ease 0.2s;
+}
+
+.bar{
+    width: 100px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: lightblue;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+    animation: bar 0.5s;
+}
+
+.s_box:hover .bar{
+    display: block;
+}
+
+@keyframes bar {
+     0%{
+         width: 0px;
+     }
+     100%{
+         width: 100px;
+     }
+    
+
+}
+
+#contact{
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    text-align: center;
+    
+}
+
+
+#contact strong{
+     color: gray;
+     font: 0.9rem;
+     letter-spacing: 1px;
+     font-weight: 600;
+      
+    
+}
+
+#contact h3{
+    color: gray;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    
+}
+
+#contact p{
+    color: grey;
+    font-weight: 500;
+    max-width: 550px;
+}
+
+#contact a{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    color: black;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#contact a i{
+    margin-left: 10px;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: 70px auto 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+footer span{
+color: black;
+text-transform: uppercase;
+letter-spacing: 1px;
+font: 1.2rem;
+     
+}
+
+.f_logo{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.menu_icon,
+.menu_btn{
+   display: none;
+    
+}
+
+
+/* Media Queries🎉 */
+@media(max-width:1000px){
+    .menu_icon{
+        display: block;
+    }
+   .nav_bar{
+       width: 100%;
+       justify-content: space-between;
+       padding: 20px;
+       position: relative;
+       z-index: 103;
+   }
+   
+   .nav{
+       position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      box-shadow: 2px 30px 30px rgba(0,0,0,0.05);
+   }
+    .nav li{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nav li a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+    
+     .logo{
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    
+    .menu icon{
+        
+        cursor: pointer;
+        float: right;
+        padding: 10px 0px;
+        position: relative;
+        user-select: none;
+        z-index: 106;
+        
+    }
+    
+    
+    .nav_icon{
+        background-color: white;
+        display: block;
+         position: relative;
+         height: 2px;
+         width: 25px;
+    }
+    
+    
+    .nav_icon::before,
+    .nav_icon::after{
+        background-color: white;
+        content: **;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+     .nav_bar .menu_icon .nav_icon::before{
+         top: 9px;
+     }
+     
+     .nav_bar .menu_icon .nav_icon::after{
+         top: -9px;
+     }
+     
+     .menu_btn:checked ~ .nav{
+         display: block;
+     }
+        
+    
+}
+
+
+@media(max-width:850px){
+       .container_box{
+           grid-template-columns: 1fr;
+       }
+    
+}
+
+
+@media(max-width:724px){
+     .hero h1{
+         font-size: 1.8rem;
+         line-height: 2rem;
+         max-width: 80%;
+          letter-spacing: 0.2rem;
+         
+     }
+     
+     .hero p{
+         max-width: 90%;
+         font-size: 0.5rem;
+     }
+     
+     .text h2{
+     font-size: 1.8rem;
+     line-height: 2rem;
+         
+     }
+     
+     .text h3{
+     font-size: 2rem;
+     line-height: 2rem;
+         
+     }
+}
+     
